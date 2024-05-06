@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+body {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#59000000",GradientType=0 );
+}
+
+header {
+  -webkit-box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+  -moz-box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+  box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+}
+
+main {
+  padding-bottom: 60px;
+  /*border-bottom: 1px solid #8f8f8f;*/
+  /*margin-bottom: 57px;*/
+}
+
+footer {
+  border-top: 1px solid rgb(200, 200, 200);
+  background: rgb(249, 249, 249);
+  background: -moz-linear-gradient(left, rgb(249, 249, 249) 0%, rgb(239, 239, 239) 80%, rgb(249, 249, 249) 100%);
+  background: -webkit-linear-gradient(left, rgb(249, 249, 249) 0%, rgb(239, 239, 239) 80%, rgb(249, 249, 249) 100%);
+  background: linear-gradient(to right, rgb(249, 249, 249) 0%, rgb(200, 200, 200) 80%, rgb(249, 249, 249) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f9f9f9", endColorstr="#f9f9f9",GradientType=1 );
+}
+
+hr.divider {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #ffffff;
+}
+
+.navbar {
+  -webkit-box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+  -moz-box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+  box-shadow: 0px 3px 9px -3px rgb(102, 102, 102);
+}
+
+.navbar.navbar-dark {
+  border-bottom: 1px solid #000000;
+  background: rgb(41, 41, 41);
+  background: -moz-linear-gradient(left, rgb(40, 40, 40) 0%, rgb(30, 30, 30) 20%, rgb(30, 30, 30) 75%, rgb(50, 50, 50) 100%);
+  background: -webkit-linear-gradient(left, rgb(40, 40, 40) 0%, rgb(30, 30, 30) 20%, rgb(30, 30, 30) 75%, rgb(50, 50, 50) 100%);
+  background: linear-gradient(to right, rgb(40, 40, 40) 0%, rgb(30, 30, 30) 20%, rgb(30, 30, 30) 75%, rgb(50, 50, 50) 100%);
+  background-color: rgba(0, 0, 0, 0);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#292929", endColorstr="#292929",GradientType=1 );
+}
+
+.navbar-brand {
+  background: #ededed;
+  background: linear-gradient(to top, #999999 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  border-top: 1px solid #eeeeee;
+  margin-top: -57px;
+}
+
+/** COMMON **/
+.bg-white-custom {
+  /*background: rgba(255,255,255,0.9);*/
+  background-color: rgba(255, 255, 255,.95);
+  border: 1px solid #333;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(66, 66, 66, 0.2);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(66, 66, 66, 0.2);
+  box-shadow: inset 0px 0px 20px 0px rgba(66, 66, 66, 0.1), 0px 0px 20px 0px rgba(66, 66, 66, 0.2);
+}
+
+.border-dotted-bottom {
+  border-bottom: 1px dotted #333;
+}
+
+.border-dashed-bottom {
+  border-bottom: 1px dashed #999;
+}
+
+.form-control {
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb .breadcrumb-item {
+  text-shadow: 0 1px rgba(255, 255, 255,.8);
+}
+footer.fixed-bottom {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}
+.parallax {
+  background-image: url("/assets/media/images/img_parallax.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+.with-gradient-border {
+  background-image: radial-gradient(circle at 100% 100%,
+    transparent -1px, #ffffff -1px,
+    #ffffff 1px, transparent 1px),
+    linear-gradient(to right, #ffffff, #555753),
+    radial-gradient(circle at 0% 100%, transparent -1px, #555753 -1px, #555753 1px, transparent 1px),
+    linear-gradient(to bottom, #555753, #555753),
+    radial-gradient(circle at 0% 0%, transparent -1px, #555753 -1px, #555753 1px, transparent 1px),
+    linear-gradient(to left, #555753, #ffffff),
+    radial-gradient(circle at 100% 0%, transparent -1px, #ffffff -1px, #ffffff 1px, transparent 1px),
+    linear-gradient(to top, #ffffff, #ffffff)
+  ;
+  background-size: 1px 1px, calc(100% - 2px) 2px, 1px 1px, 2px calc(100% - 2px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+}
+
+/** ANIMATIONS **/
+.bg-gradient-animated {
+  /*background: #6c325c url("/assets/images/bg-grad-001.svg") center top no-repeat;*/
+  /*animation: animateBg 14s linear infinite;*/
+  /*background-image: linear-gradient(90deg, #fff, #efefef, #fff, #efefef);*/
+  /*background-size: 300% 100%;*/
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/** GOOGLE BUTTON **/
+.google-btn {
+  min-width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+
+.btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.btn-text:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+
+.btn-text:active {
+  background: #1669F2;
+}
